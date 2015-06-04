@@ -27,7 +27,7 @@ and open the template in the editor.
                         <div class="form-group">
                             <label for="inputNome3" class="col-sm-2 control-label">Nome</label>
                             <div class="col-sm-10">
-                                <input type="Nome" class="form-control" id="inputEmail3" placeholder="Nome">
+                                <input type="text" class="form-control" id="inputEmail3" placeholder="Nome">
                             </div>
                         </div>
                         <div class="form-group">
@@ -45,25 +45,26 @@ and open the template in the editor.
                                 <label class="radio-inline">
                                     <input name="sexo" type="radio"  value="F"> Feminino
                                 </label>
-                             
                             </div>
                         </div>
                         <div class="form-group">
                             <div class="col-sm-offset-2 col-sm-10">
                                 <div class="checkbox">
                                     <label>
-                                        <input type="checkbox"> Lembrar-me
+                                        <input type="checkbox" checked> Ativo
                                     </label>
                                 </div>
                             </div>
                         </div>
                         <div class="form-group">
                             <div class="col-sm-offset-2 col-sm-10">
-                                <button type="Ir" class="btn btn-default">Ir</button>
+                                <button type="submit" class="btn btn-success">Ir</button>
                             </div>
                         </div>
                     </form></div>
-                <div class="col-md-6">.col-md-6</div>
+                <div class="col-md-6">
+                    <h3>Listagem de Pessoas</h3>
+                </div>
             </div>
 
         </div>
