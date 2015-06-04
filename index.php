@@ -27,13 +27,13 @@ and open the template in the editor.
                         <div class="form-group">
                             <label for="inputNome3" class="col-sm-2 control-label">Nome</label>
                             <div class="col-sm-10">
-                                <input type="text" class="form-control" id="inputEmail3" placeholder="Nome">
+                                <input type="text" id="input-nome" class="form-control" id="inputEmail3" placeholder="Nome">
                             </div>
                         </div>
                         <div class="form-group">
                             <label for="inputEndereçõ3" class="col-sm-2 control-label">Endereço</label>
                             <div class="col-sm-10">
-                                <input type="Endereço" class="form-control" id="inputPassword3" placeholder="Endereço">
+                                <input type="Endereço" id="input-endereco" class="form-control" id="inputPassword3" placeholder="Endereço">
                             </div>
                         </div>
                         <div class="form-group">
@@ -58,7 +58,7 @@ and open the template in the editor.
                         </div>
                         <div class="form-group">
                             <div class="col-sm-offset-2 col-sm-10">
-                                <button type="submit" class="btn btn-success">Ir</button>
+                                <button type="submit" id="btn-enviar" class="btn btn-success  ">Cadastrar</button>
                             </div>
                         </div>
                     </form></div>
@@ -68,6 +68,20 @@ and open the template in the editor.
             </div>
 
         </div>
+
+        <script>
+            ($('#btn-enviar')).click(function () {
+                if ($('#input-nome').val() == '') {
+                    alert('Preencha com um Nome:')
+                }
+                if ($('#input-endereco').val() == '') {
+                    alert('Preencha com um Endereço Valido:')
+                }
+
+            })
+        </script>
+
+
 
     </body>
 </html>
