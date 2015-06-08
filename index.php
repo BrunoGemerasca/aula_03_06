@@ -23,17 +23,17 @@ and open the template in the editor.
         <div class="container">
 
             <div class="row">
-                <div class="col-md-6"><form class="form-horizontal">
+                <div class="col-md-6"><form class="form-horizontal" method="GET" action="index.php">
                         <div class="form-group">
                             <label for="inputNome3" class="col-sm-2 control-label">Nome</label>
                             <div class="col-sm-10">
-                                <input type="text" id="input-nome" class="form-control" id="inputEmail3" placeholder="Nome">
+                                <input type="text" name="nome" id="input-nome" class="form-control" id="inputEmail3" placeholder="Nome">
                             </div>
                         </div>
                         <div class="form-group">
                             <label for="inputEndereçõ3" class="col-sm-2 control-label">Endereço</label>
                             <div class="col-sm-10">
-                                <input type="Endereço" id="input-endereco" class="form-control" id="inputPassword3" placeholder="Endereço">
+                                <input type="Endereço" name="endereco" id="input-endereco" class="form-control" id="inputPassword3" placeholder="Endereço">
                             </div>
                         </div>
                         <div class="form-group">
@@ -74,9 +74,16 @@ and open the template in the editor.
                 if ($('#input-nome').val() == '') {
                     alert('Preencha com um Nome:')
                 }
+                
+                
                 if ($('#input-endereco').val() == '') {
                     alert('Preencha com um Endereço Valido:')
                 }
+                
+                 if ($('#opt-masc').is(':checked') && !$('#opt-fem').is(':checked') ) {
+                    alert('Preencha com um Endereço Valido:')
+                
+                
 
             })
         </script>
